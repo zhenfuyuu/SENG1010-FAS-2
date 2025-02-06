@@ -9,7 +9,7 @@ and control structures to manipulate data and control program flow.
 */
 #include <stdio.h>
 /*Function protoypes*/
-double getNum(double number); //Prototype for user input function
+double getNum(void); //Prototype for user input function
 double addNum(double numOne, double numTwo);
 
 int main(void)
@@ -19,10 +19,10 @@ int main(void)
     double numTwo;
 
     printf("Please input a number:\n");
-    getNum(numOne); //calls getNum and stores value in variable numOne
+    //getNum(numOne); //calls getNum and stores value in variable numOne
 
     printf("Please input another number\n");
-    getNum(numTwo); //calls getNum for numTwo
+    //getNum(numTwo); //calls getNum for numTwo
 
 //Call arithmetic functions and output their values
 /* Adding numOne and numTwo */
